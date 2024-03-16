@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    
 </head>
 <body>
     <nav>
@@ -232,17 +234,17 @@
             <div class="columns">
               <div class="column is-half">
                 <!-- action="https://fabform.io/f/{insert-your-form-id}" -->
-                <form>
+                <form id="contact">
                   <div class="field">
                     <label class="label">Name</label>
                     <div class="control">
-                      <input class="input" type="text" placeholder="Your Name">
+                      <input id="name" class="input" type="text" placeholder="Your Name">
                     </div>
                   </div>
                   <div class="field">
                     <label class="label">Email</label>
                     <div class="control">
-                      <input class="input" type="email" placeholder="Your Email">
+                      <input id="email" class="input" type="email" placeholder="Your Email">
                     </div>
                   </div>
                   <div class="field">
@@ -253,7 +255,7 @@
                   </div>
                   <div class="field">
                     <div class="control">
-                      <button class="primary">Submit</button>
+                      <button id="message" class="primary">Submit</button>
                     </div>
                   </div>
                 </form>
@@ -263,7 +265,8 @@
         
         <p class="rights">&copy; 2024 Your Competitive Programming Platform. All rights reserved.</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="form.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
