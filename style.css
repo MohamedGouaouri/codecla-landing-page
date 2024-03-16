@@ -1,0 +1,352 @@
+:root {
+    --color-main-body: #23155B;
+    --color-primary: #8053FF;
+    --color-gray-light: #817d8e;
+    --white: #f4f4f4;
+
+}
+
+/* Reset default browser styles */
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: "Martel Sans", sans-serif;
+    background-color: #f4f4f4;
+    color: var(--color-main-body);
+}
+
+nav {
+    padding: 10px 0;
+}
+
+/* Navbar container styles */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+/* Logo styles */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 40px; /* Adjust height as needed */
+}
+
+.logo .logo-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Links styles */
+.links a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Button styles */
+button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button.primary {
+    background-color: var(--color-primary);
+    font-weight: 600;
+}
+
+button.secondary {
+    /* background-color: var(--color-primary); */
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--white);
+    font-weight: 600;
+}
+
+/* Main content container */
+section {
+    padding: 40px;
+}
+
+/* Header styles */
+section#header {
+    width: 100%;
+    min-height: 500px;
+    background-image: url("./assets/bg.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+section#header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+}
+
+section#header .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+section#level-up {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+section#level-up h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+section#level-up .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust the gap between boxes */
+    max-width: 800px; /* Adjust the maximum width of the grid */
+    margin: 0 auto;
+}
+
+section.for- h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+section.for- h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+    max-width: 75%;
+}
+
+
+section.for- .features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px; /* Adjust the gap between boxes */
+    margin: 2rem auto;
+}
+
+/* Individual box styles */
+section.for- .features-container .feature {
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    display: flex;
+    gap: 0.5rem;
+}
+.feature .feature-description {
+    color: var(--color-gray-light);
+}
+
+
+
+
+section#brought-to-you {
+    position: relative;
+    min-height: 600px;
+}
+section#brought-to-you div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+section#brought-to-you .img {
+    background-image: url("./assets/team.svg");
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    left: -100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+/* Testimonials section */
+section#testimonials h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    width: 500px;
+    min-height: 400px;
+    position: relative;
+  }
+  
+  .stars {
+    font-size: 14px;
+  }
+  
+  .testimonial {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    height: 100%;
+    line-height: 28px;
+    margin: 0;
+  }
+  
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .user .user-image {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+  }
+  
+  .user .user-details {
+    text-align: center;
+  }
+  
+  .user .username {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .user .role {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .progress-dots {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .progress-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .progress-dot.active {
+    background-color: #555;
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+  }
+  
+  .btn:hover {
+    background-color: #eee;
+  }
+  
+  #btn-prev {
+    left: 25px;
+  }
+  
+  #btn-next {
+    right: 25px;
+  }
+  
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: var(--color-main-body);
+    border-top-left-radius: 10rem;
+    min-height: 600px;
+    color: #fff;
+    position: relative;
+    padding: 5rem;
+}
+
+footer .container {
+    margin: auto;
+}
+footer .container .title {
+    color: var(--white);
+}
+
+footer .container .label {
+    color: var(--white);
+}
+
+footer p.rights {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+span.alternate {
+    color: var(--color-primary);
+}
