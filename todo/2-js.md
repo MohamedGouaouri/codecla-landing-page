@@ -52,7 +52,16 @@ First we consider the following testomonials:
 ### Testimonial part
 Implement dynamic testimonials:
 1. If the user clicks on next or previous buttons, the next or previous testimonial appears.
-2. Try to add infinit testomonial loop.
+2. Try to add infinit testomonial loop that changes each 5 seconds.
 
 ### Form submission
-We want to collect our clients sent message, for this we are going to use an online tool that can be found here
+We want to collect our clients sent message, for this we are going to use an online tool that can be found [here](https://fabform.io). It's a tool that allows us to send form messages using http requests and then we can visualize them in their website.
+1. Follow the docs to see how to make a request to their API when the user submits a message.
+
+![fabform](./images/js/fabform.png)
+
+2. Now, try to add form submission on success alerts.
+
+For this we use this [tool](https://sweetalert2.github.io/) which provides a variety of nice and sweet alerts.
+
+![alerts](./images/js/alert.png)
