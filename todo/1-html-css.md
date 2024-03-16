@@ -1,4 +1,4 @@
-## HTML
+## HTML+CSS assignement
 In the assignment you are going to use your knowledge
 to build the html skeleton of the application's landing page.
 
