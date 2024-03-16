@@ -87,4 +87,9 @@ btnPrev.addEventListener("click", () => {
   displayTestimonial();
 });
 
+setInterval(() => {
+  idx === testimonials.length - 1 ? (idx = 0) : idx++;
+  displayTestimonial();
+}, 5000)
+
 displayTestimonial();
