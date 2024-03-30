@@ -2,12 +2,31 @@
 In the assignment you are going to use your knowledge
 to build the html skeleton of the application's landing page.
 
-<!-- TODO: Insert a link -->
-You can find the final Figma design [here](https://shorturl.at/xGTZ6)
+The page you will be going to design is the following:
+![descktop-view](./images/html-css/codecla-landing-desktop.png)
+
+Before your start on your tasks, here are important things related color schemes and fonts
+
+### Color Scheme:
+
+- **Primary Color:** #8053FF
+- **Main Body Color:** #23155B 
+- **Gray Light Color:** #817d8e
+- **White Color:** #f4f4f4 
+- **Background Color:** #f4f4f4
+
+### Font:
+
+- **Font Family:** Martel Sans, sans-serif
+  - **Weights Available:** 200, 300, 400, 600, 700, 800, 900
+- **Alternative Font:** Noto Sans Khojki
+  - **Weights Available:** Normal
+
 
 ### Tasks
 The tasks are as follows:
 
+#### 1. Landing page UI
 - Implement the navigation bar section which contains a logo on the left and two links an a button to the right
 ![navbar](./images/html-css/1-nav.png)
 
@@ -32,4 +51,16 @@ The tasks are as follows:
 - Implement the footer section (Dont't include form submission yet, it'll be added in the JS assignment):
 ![features](./images/html-css/8-footer.png)
 
-- Implement mobile version of the landing page
+- Implement mobile version of the landing page:
+
+![mobile-design](./images/html-css/codecla-landing-mobile.png)
+
+
+#### 2. Signup page UI
+
+Next, you are asked to implement the the following signup page UI
+![signup-design](./images/html-css/signup.png)
+
+#### 3. Signup page UI
+Next, you are asked to implement the the following signup page UI
+![signin-design](./images/html-css/signin.png)

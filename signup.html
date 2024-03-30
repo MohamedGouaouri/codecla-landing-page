@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel panel">
+            <img
+                class="image"
+                src="assets/coding.png"
+                alt="App Image"
+                height="300"
+                width="300"
+            />
+        </div>
+        <div class="right-panel panel">
+            <form class="form" id="signup-form">
+                <h2 class="heading">Join Coders Now!</h2>
+                    <input
+                        type="text"
+                        name="first_name"
+                        placeholder="First Name"
+                        class="input"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="last_name"
+                        placeholder="Last Name"
+                        class="input"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        class="input"
+                        required
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        class="input"
+                        required
+                        minlength="8"
+                    />
+                <button type="submit" class="button">
+                    Sign Up
+                </button>
+                <div class='text'>Already have an account? <a href='/signin.html' class='link'>Login</a></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

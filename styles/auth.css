@@ -1,0 +1,82 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: "Martel Sans", sans-serif;
+    background-color: #f4f4f4;
+    color: var(--color-main-body);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container { 
+    display: flex; 
+    height: 100%; 
+    width: 100%;
+}
+.panel { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex: 1;
+}
+.left-panel { 
+    background-color: #23155B;
+}
+.image { 
+    max-width: 20rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.right-panel { 
+    background-color: #E5E7EB; 
+}
+.form {
+    height: 50%;
+    width: 40%;
+    padding: 2rem; 
+    background-color: #fff; 
+    border-radius: 0.25rem; 
+    box-shadow: 0 4px 6px -1px 
+    rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading { 
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    margin-bottom: 2rem; 
+    color: #8053FF; 
+}
+.input { 
+    padding: 1rem;
+    margin: 1rem 0;
+    display: block; 
+    border-width: 1px; 
+    border-color: #E5E7EB; 
+    border-radius: 0.5rem; 
+    font-size: 0.875rem;
+    width: 100%;
+
+}
+.button { 
+    background-color: #3B82F6; 
+    color: #fff; 
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem; 
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.text { 
+    color: #000; 
+}
+.link { 
+    color: #8053FF;
+    text-decoration: none;
+}
