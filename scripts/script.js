@@ -93,3 +93,8 @@ setInterval(() => {
 }, 5000)
 
 displayTestimonial();
+
+
+
+// Set copy right year
+document.getElementById('copy-right-year').innerText = new Date().getFullYear()
