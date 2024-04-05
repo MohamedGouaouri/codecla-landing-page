@@ -1,49 +1,48 @@
 
 
 const messageContainer = document.getElementById("messageContainer");
+const nameErrorMsg = document.getElementById('name-error-msg')
+const emailErrorMsg = document.getElementById('email-error-msg')
+const textErrorMsg = document.getElementById('text-error-msg')
 
 
+document.getElementById("name").addEventListener('focus', () => {
+  nameErrorMsg.style.display = 'none'
+})
+
+document.getElementById("email").addEventListener('focus', () => {
+  emailErrorMsg.style.display = 'none'
+})
+document.getElementById("message").addEventListener('focus', () => {
+  textErrorMsg.style.display = 'none'
+})
 
 document.getElementById("contact").addEventListener("submit", function(event) {
   event.preventDefault();
   
-  const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value
-  };
-  
-  /* make sure to replace the xxxxxxx with the form id you created on fabform.io */
-  
-  fetch('https://fabform.io/f/v1EWxwU', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(formData)
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success === "true") {
-    //   messageContainer.innerHTML = "<p style='color: green;'>Form submitted successfully!</p>";
-      Swal.fire({
-        title: "Good job!",
-        text: "Form submitted successfully!",
-        icon: "success"
-      });
-    } else {
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Something went wrong!",
-          });
-    }
-  })
-  .catch(error => {
-    Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Something went wrong!",
-      });
+  const name = document.getElementById("name").value
+  const email = document.getElementById("email").value
+  const message = document.getElementById("message").value
+
+  let isInvalid = false
+  if (!name) {
+    nameErrorMsg.style.display = 'inline'
+    isInvalid = true
+  }
+  if (!email) {
+    emailErrorMsg.style.display = 'inline'
+    isInvalid = true
+  }
+
+  console.log(message)
+  if (!message) {
+    textErrorMsg.style.display = 'inline'
+    isInvalid = true
+  }
+  if (isInvalid) return
+  Swal.fire({
+    title: "Thank you for reaching out!",
+    text: "Form submitted successfully!",
+    icon: "success"
   });
 });

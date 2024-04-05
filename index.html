@@ -239,23 +239,26 @@
                     <label class="label">Name</label>
                     <div class="control">
                       <input id="name" class="input" type="text" placeholder="Your Name">
+                      <span id="name-error-msg" style="display: none; color: red;">Name is required</span>
                     </div>
                   </div>
                   <div class="field">
                     <label class="label">Email</label>
                     <div class="control">
                       <input id="email" class="input" type="email" placeholder="Your Email">
+                      <span id="email-error-msg" style="display: none; color: red;">Email is required</span>
                     </div>
                   </div>
                   <div class="field">
                     <label class="label">Message</label>
                     <div class="control">
-                      <textarea class="textarea" placeholder="Your Message"></textarea>
+                      <textarea class="textarea" id="message"  placeholder="Your Message"></textarea>
+                      <span id="text-error-msg" style="display: none; color: red;">Message is required</span>
                     </div>
                   </div>
                   <div class="field">
                     <div class="control">
-                      <button id="message" class="primary">Submit</button>
+                      <button class="primary">Submit</button>
                     </div>
                   </div>
                 </form>
